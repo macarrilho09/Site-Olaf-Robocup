@@ -17,3 +17,35 @@
     padding: 0;
     box-sizing: border-box;
     }
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.hero {
+    min-height: 100dvh;
+    background-image: url(../images/BannerSite.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+}
+
+.hero h1 {
+    font-size: var(--font-lg);
+    color: var(--color-light);
+    width: 50%;
+    text-wrap: balance;
+}
+
+.container {
+    width: 90%;
+    margin: var(--spacing-xl) auto;
+    text-align: center;
+}
