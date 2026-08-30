@@ -9,7 +9,7 @@
     --font-body: 'Poppins', sans-serif;
 
     --font-sm: 1.2rem;
-    --font-md: 1rem;
+    --font-md: 2rem;
     --font-lg: clamp(2.5rem, 5vw, 6rem);
 
     --spacing-sm: 1rem;
@@ -18,6 +18,7 @@
     --spacing-xl: 4rem;
 
     --radius-md: 1rem;
+    --radius-xl: 2rem;
 }
 
 * {
@@ -28,14 +29,9 @@
 
 body {
     font-family: var(--font-body);
-    font-size: var(--font-md);
+    font-size: var(--font-sm);
     color: var(--color-black);
     line-height: 1.6;
-}
-
-img {
-    width: 100%;
-    display: block;
 }
 
 
@@ -43,7 +39,7 @@ ul, li {
     list-style: none;
 }
 
-h1, h2, h3, h4, a {
+h1, h3, h4, a {
     font-family: var(--font-title);
     text-transform: uppercase;
     line-height: 1.1;
@@ -52,6 +48,22 @@ h1, h2, h3, h4, a {
 h1 {
     font-size: var(--font-lg);
     color: var(--color-white);
+}
+
+h2 {
+    font-family: var(--font-body);
+    font-size: var(--font-md);
+    color: var(--color-black);
+    text-transform: none;
+}
+
+.h2-hero {
+    color: var(--color-white);
+}
+
+h3 {
+    font-size: var(--font-md);
+    color: var(--color-red);
 }
 
 a {
@@ -65,7 +77,15 @@ a:hover {
 
 p {
     color: var(--color-text-muted);
+    font-family: var(--font-body);
 }
+
+img {
+    border-radius: var(--radius-xl);
+    width: 100%;
+}
+
+
 
 .menu-container {
     display: grid;
@@ -73,7 +93,7 @@ p {
     align-items: center;
     text-align: center;
     padding: var(--spacing-sm);
-    background-color: var(--color-black)
+    background-color: var(--color-black);
 }
 
 .sejasocio {
@@ -82,22 +102,109 @@ p {
     border-radius: var(--radius-md);
 }
 
+.sejasocio a {
+    color: var(--color-white);
+}
+
+.sejasocio:hover {
+    border: 2px solid var(--color-white);
+}
+
 .logo img {
     width: 100%;
     max-width: 150px;
 }
 
+
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    text-align: left;
     height: 100vh;
     background-image: url(../images/BANNERSITE.png);
     background-size: cover;
     background-position: center;
     padding: var(--spacing-sm) var(--spacing-md);
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: var(--spacing-md);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.btn {
+    display: grid;
+    place-items: center;
+    width: clamp(190px, 22vw, 200px);
+    background-color: var(--color-red);
+    color: var(--color-white);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-md);
+    transition: all 0.3s ease-in-out;
 }
 
 .destaque {
     color: var(--color-red);
+}
+
+.quemsomos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-sm);
+    padding: var(--spacing-xl) var(--spacing-xl);
+    align-items: center;
+
+}
+
+.quemsomos-image {
+    justify-self: stretch;
+}
+
+.quemsomos-image img {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+i{
+    font-size: var(--font-lg);
+    color: var(--color-red);
+}
+
+
+.diferenciais {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-xl) var(--spacing-xl);
+    align-items: stretch;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-lg) var(--spacing-md); 
+    align-items: center;
+    text-align: center;
+    border: 2px solid var(--color-text-muted);
+    border-radius: var(--radius-md);
+}
+.titulo {
+    grid-column: 1 / -1;
+    text-align: center;
 }
