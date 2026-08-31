@@ -100,7 +100,11 @@ img {
 }
 
 .sejasocio:hover {
+    color: var(--color-white);
+    background: none;
     border: 2px solid var(--color-white);
+    border-radius: var(--radius-md);
+    transition: all 0.5s ease-in-out;
 }
 
 .logo img {
@@ -141,6 +145,14 @@ img {
     padding: var(--spacing-sm) var(--spacing-md);
     border-radius: var(--radius-md);
     transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    color: var(--color-white);
+    background: none;
+    border: 2px solid var(--color-white);
+    border-radius: var(--radius-md);
+    transition: all 0.5s ease-in-out;
 }
 
 .destaque {
@@ -252,13 +264,20 @@ i {
 }
 
 .card2:hover {
-    transition: all 0.5s ease-in-out;
+    transition: all 1s ;
     border-radius: var(--radius-md);
-    background-color: var(--color-black);
+    background-color: var(--color-red);
     color: var(--color-white);
 }
 
+.card2:hover h2, .card2:hover i { 
+    color: var(--color-white);
+}
 
+.robo-topicos h2 {
+    font-size: var(--font-sm);
+    color: var(--color-red);
+}
 
 @media (max-width: 768px) {
     .robo {
