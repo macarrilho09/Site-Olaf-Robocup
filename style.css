@@ -34,10 +34,6 @@ body {
     line-height: 1.6;
 }
 
-ul, li {
-    list-style: none;
-}
-
 h1, h3, h4, a {
     font-family: var(--font-title);
     text-transform: uppercase;
@@ -232,13 +228,10 @@ i {
     flex-direction: column;
 }
 
-.robo-topicos h3 {
-    grid-column: span 2;
-}
 
 .robo-topicos {
     display: grid;
-    grid-template-columns: repeat(2, minmax(240px, 1fr));
+    grid-template-columns: repeat(1, minmax(240px, 1fr));
     color: var(--color-black);
     gap: var(--spacing-sm);
     min-width: 0;
@@ -246,7 +239,6 @@ i {
 
 .card2 {
     display: flex;
-    flex-direction: column;
     height: 100%;
     padding: 0.6rem 1rem;
     align-items: center;
@@ -255,7 +247,8 @@ i {
     border: 2px solid var(--color-red);
     background-color: var(--color-white);
     color: #000000;
-        border-radius: var(--radius-md);
+    border-radius: var(--radius-md);
+    gap: var(--font-sm);
 }
 
 .card2:hover {
@@ -264,6 +257,7 @@ i {
     background-color: var(--color-black);
     color: var(--color-white);
 }
+
 
 
 @media (max-width: 768px) {
