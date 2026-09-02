@@ -61,6 +61,11 @@ h3 {
     color: var(--color-red);
 }
 
+h4 {
+    font-size: var(--font-lg);
+    color: var(--color-red);
+}
+
 a {
     text-decoration: none;
     color: var(--color-light-gray);
@@ -200,7 +205,7 @@ i {
     flex-direction: column;
     height: 100%;
     gap: var(--spacing-sm);
-    padding: var(--spacing-lg) var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-sm);
     align-items: center;
     text-align: center;
     border: 2px solid var(--color-text-muted);
@@ -279,7 +284,85 @@ i {
     color: var(--color-red);
 }
 
-@media (max-width: 768px) {
+.componentes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--spacing-sm);
+    padding: var(--spacing-xl) var(--spacing-xl);
+    align-items: center;
+}
+
+.componentes h4 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.arma {
+    display: grid;
+    grid-template-columns: 2fr 3fr; 
+    gap: var(--spacing-sm);
+    padding: var(--spacing-xl) var(--spacing-xl);
+    align-items: center;
+}
+
+.arma img{
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.galeria h4 {
+    text-align: center;
+    padding: var(--spacing-sm) var(--spacing-sm);
+}
+
+.integrantes {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    gap: var(--spacing-sm);
+    padding: var(--spacing-xl) var(--spacing-xl);
+    align-items: center;
+}
+
+.integrantes-content {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-lg) var(--spacing-md);
+    background-color: var(--color-black);
+    text-align: center;
+}
+
+.footer img {
+    width: 100%;
+    max-width: 150px;
+}
+
+.footer-social {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.footer-social i {
+    font-size: var(--font-md);
+    color: var(--color-white);
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-social a:hover i {
+    color: var(--color-red);
+}
+
+@media (max-width: 1024px) {
     .robo {
         grid-template-columns: 1fr;
         padding: var(--spacing-md);
@@ -310,5 +393,17 @@ i {
 
     .btn {
         width: 100%;
+    }
+
+    .componentes {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    .arma {
+        grid-template-columns: 1fr;
+    }
+
+    .integrantes {
+        grid-template-columns: 1fr;
     }
 }
