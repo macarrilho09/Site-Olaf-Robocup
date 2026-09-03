@@ -64,6 +64,8 @@ h3 {
 h4 {
     font-size: var(--font-lg);
     color: var(--color-red);
+    text-align: center;
+    padding: var(--spacing-sm) var(--spacing-sm);
 }
 
 a {
@@ -294,7 +296,6 @@ i {
 
 .componentes h4 {
     grid-column: 1 / -1;
-    text-align: center;
 }
 
 .arma {
@@ -310,11 +311,6 @@ i {
     max-width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
-}
-
-.galeria h4 {
-    text-align: center;
-    padding: var(--spacing-sm) var(--spacing-sm);
 }
 
 .integrantes {
