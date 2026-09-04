@@ -273,10 +273,9 @@ i {
     transition: all 1s ;
     border-radius: var(--radius-md);
     background-color: var(--color-red);
-    color: var(--color-white);
 }
 
-.card2:hover h2, .card2:hover i { 
+.card2:hover h2, .card2:hover i, .card2:hover p{ 
     color: var(--color-white);
 }
 
@@ -362,7 +361,7 @@ i {
     padding: var(--spacing-xl) var(--spacing-xl);
     text-align: center;
     gap: var(--spacing-lg);
-}
+}   
 
 .sejasocio-content{
     display: grid;
@@ -377,15 +376,25 @@ i {
 
 .sejasocio-invista {
     display: grid;
-    gap: var(--spacing-sm);
 }
 
 .sejasocio-invista p {
     text-align: start;
 }
+
 .sejasocio-grafico img{
     border-radius: 0;
+}
 
+.sejasocio-infos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.sejasocio-infos div {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
 }
 
 @media (max-width: 1024px) {
