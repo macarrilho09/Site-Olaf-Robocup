@@ -327,20 +327,6 @@ i {
     align-items: center;
 }
 
-.integrantes {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(280px, 1fr));
-    gap: var(--spacing-sm);
-    padding: var(--spacing-xl) var(--spacing-xl);
-    align-items: center;
-}
-
-.integrantes-content {
-    grid-column: 1 / -1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .footer {
     display: flex;
@@ -461,10 +447,6 @@ i {
         grid-template-columns: 1fr;
     }
 
-    .integrantes {
-        grid-template-columns: 1fr;
-    }
-
     .galeria {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
@@ -491,8 +473,7 @@ i {
     .componentes,
     .arma,
     .galeria,
-    .videos,
-    .integrantes {
+    .videos {
         padding-left: var(--spacing-sm);
         padding-right: var(--spacing-sm);
     }
