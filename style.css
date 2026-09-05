@@ -99,24 +99,6 @@ img {
     background-color: var(--color-black);
 }
 
-.sejasocio {
-    background-color: var(--color-red);
-    padding: 3px 10px;
-    border-radius: var(--radius-md);
-}
-
-.sejasocio a {
-    color: var(--color-white);
-}
-
-.sejasocio:hover {
-    color: var(--color-white);
-    background: none;
-    border: 2px solid var(--color-white);
-    border-radius: var(--radius-md);
-    transition: all 0.5s ease-in-out;
-}
-
 .logo img {
     width: 100%;
     max-width: 150px;
@@ -390,49 +372,6 @@ i {
     color: var(--color-red);
 }
 
-.sejasocio-container {
-    display: grid;
-    padding: var(--spacing-xl) var(--spacing-xl);
-    text-align: center;
-    gap: var(--spacing-lg);
-}
-
-.sejasocio-content {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-}
-
-.sejasocio-invista h4 {
-    color: var(--color-black);
-    text-align: start;
-}
-
-.sejasocio-invista {
-    display: grid;
-}
-
-.sejasocio-invista p {
-    text-align: start;
-}
-
-.sejasocio-grafico img {
-    border-radius: 0;
-}
-
-.sejasocio-infos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column: span 2;
-    gap: var(--spacing-sm);
-}
-
-.sejasocio-infos div {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    padding: var(--spacing-sm) var(--spacing-sm);
-}
-
 .investidores {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -462,35 +401,6 @@ i {
     font-size: 0.9rem;
 }
 
-.sejasocio-pedido {
-    display: grid;
-    grid-template-columns: auto 4fr 3fr;
-    align-items: center;
-    justify-content: center;
-    gap: var(--spacing-md);
-    border: 2px solid var(--color-red);
-    border-radius: var(--radius-md);
-    padding: var(--spacing-md) var(--spacing-md);
-    margin: var(--spacing-sm) auto;
-    max-width: 900px;
-    text-align: start;
-}
-
-.btn-sejasocio {
-    display: grid;
-    place-items: center;
-    width: 100%;
-    background-color: var(--color-red);
-    color: var(--color-white);
-    padding: var(--spacing-sm) var(--spacing-sm);
-    border-radius: var(--radius-md);
-    transition: all 0.3s;
-}
-
-.btn-sejasocio:hover {
-    background-color: var(--color-black);
-    color: var(--color-white);
-}
 
 
 @media (max-width: 1024px) {
@@ -555,23 +465,6 @@ i {
         grid-template-columns: 1fr;
     }
 
-    .sejasocio-content {
-        grid-template-columns: 1fr;
-    }
-
-    .sejasocio-infos {
-        grid-template-columns: 1fr;
-    }
-
-    .sejasocio-pedido {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .sejasocio-grafico img {
-        display: none;
-    }
-
     .galeria {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
@@ -599,8 +492,7 @@ i {
     .arma,
     .galeria,
     .videos,
-    .integrantes,
-    .sejasocio-container {
+    .integrantes {
         padding-left: var(--spacing-sm);
         padding-right: var(--spacing-sm);
     }
@@ -613,7 +505,6 @@ i {
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     }
 
-    /* GALERIA NO CELULAR */
     .galeria {
         grid-template-columns: 1fr;
     }
@@ -627,9 +518,5 @@ i {
         flex-direction: column;
         text-align: center;
         align-items: center;
-    }
-
-    .sejasocio-pedido {
-        padding: var(--spacing-md) var(--spacing-sm);
     }
 }
